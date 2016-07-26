@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            background: black;
+            height: 1000px;
+        }
+        .scaler{
+            background: red;
+            width: 375px;
+            height: 642px;
+            box-sizing: border-box;
+            border: 5px solid green;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script> 
+    <script src="../jquery.scaler.js"></script>
+    <script>
+        $(function(){
+            var isScale = true;
+            $('.scaler').click(function(){
+                $('.scaler').scaler(isScale);
+                isScale = !isScale;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="scaler">
+
+    </div>
+</body>
+</html>
